@@ -22,8 +22,8 @@
                         <thead>
                         <tr>
                             <th scope="col">Id</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Surname</th>
+                            <th scope="col">Fullname</th>
+                            <th scope="col">Salary</th>
                             <th scope="col">Email</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Date of Birth</th>
@@ -34,11 +34,11 @@
                         <c:forEach var="customer" items="${customers}">
                             <tr id="${customer.id}">
                                 <td>${customer.id}</td>
-                                <td>${customer.firstname}</td>
-                                <td>${customer.lastname}</td>
+                                <td>${customer.fullname}</td>
+                                <td>${customer.salary}</td>
                                 <td>${customer.email}</td>
                                 <td>${customer.phoneNumber}</td>
-                                <td class="d-flex justify-content-between align-items-center">${customer.dob}
+                                <td class="d-flex justify-content-between align-items-center">${customer.dateOfBirth}
                                     <span>
                                         <button onclick="ajaxpost(${customer.id})" class="btn btn-danger">Delete</button>
                                         <a href="home/update?id=${customer.id}" class="btn btn-primary">Edit</a>

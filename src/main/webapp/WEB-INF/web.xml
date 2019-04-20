@@ -13,7 +13,7 @@
     </servlet-mapping>
 
     <listener>
-        <listener-class>com.furkanisitan.ServletListener</listener-class>
+        <listener-class>com.furkanisitan.webUI.listeners.ServletListener</listener-class>
     </listener>
 
 </web-app>

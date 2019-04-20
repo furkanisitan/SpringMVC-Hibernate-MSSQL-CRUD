@@ -1,10 +1,10 @@
 package com.furkanisitan.entities;
 
+import com.furkanisitan.core.entities.IEntity;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 
 @Entity
 @Table(name = "Customers")
@@ -12,15 +12,15 @@ import java.util.Date;
 public class Customer implements IEntity, Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     @Column(name = "Id")
     private int id;
 
-    @Column(name = "Firstname")
-    private String firstname;
+    @Column(name = "Salary")
+    private int salary;
 
-    @Column(name = "Lastname")
-    private String lastname;
+    @Column(name = "Fullname")
+    private String fullname;
 
     @Column(name = "Email")
     private String email;
@@ -29,7 +29,7 @@ public class Customer implements IEntity, Serializable {
     private String phoneNumber;
 
     @Column(name = "DateOfBirth")
-    private String dob;
+    private String dateOfBirth;
 
     public Customer() {
     }
@@ -42,20 +42,20 @@ public class Customer implements IEntity, Serializable {
         this.id = id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public int getSalary() {
+        return salary;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public String getEmail() {
@@ -74,11 +74,11 @@ public class Customer implements IEntity, Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getDob() {
-        return dob;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 }

@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
-    <link rel='stylesheet' href='/webjars/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
 </head>
 <body>
 
-<script src="/webjars/jquery/jquery.min.js"></script>
-<script src="/webjars/popper.js/popper.min.js"></script>
-<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/webjars/jquery/3.4.0/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/webjars/popper.js/1.15.0/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <jsp:doBody/>
 

@@ -1,6 +1,6 @@
-package com.furkanisitan;
+package com.furkanisitan.webUI.listeners;
 
-import com.furkanisitan.sampleDatabases.SampleDatabase1;
+import com.furkanisitan.data_access.sample_databases.SampleDatabase1;
 
 import javax.servlet.ServletContextEvent;
 

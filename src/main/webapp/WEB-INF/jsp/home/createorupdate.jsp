@@ -26,17 +26,17 @@
                 <input type="text" id="id" value="${customer.id}" hidden>
 
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label" for="firstname">Name</label>
+                    <label class="col-lg-3 col-form-label form-control-label" for="fullname">Fullname</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" id="firstname" name="firstname"
-                               required value="${customer.firstname}">
+                        <input class="form-control" type="text" id="fullname" name="fullname"
+                               required value="${customer.fullname}">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label" for="lastname">Surname</label>
+                    <label class="col-lg-3 col-form-label form-control-label" for="salary">Salary</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="text" id="lastname" name="lastname"
-                               required value="${customer.lastname}">
+                        <input class="form-control" type="number" id="salary" name="salary"
+                               required value="${customer.salary}">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -56,7 +56,7 @@
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label" for="dob">Date of Birth</label>
                     <div class="col-lg-9">
-                        <input class="form-control" type="date" id="dob" name="dob" value="${customer.dob}"
+                        <input class="form-control" type="date" id="dob" name="dob" value="${customer.dateOfBirth}"
                                required min="1900-01-01" max="${currentDate}">
                     </div>
                 </div>
@@ -80,8 +80,8 @@
                         url: "${pageContext.request.contextPath}/createorupdate",
                         data: {
                             "id": $('#id').val(),
-                            "firstname": $('#firstname').val(),
-                            "lastname": $('#lastname').val(),
+                            "salary": $('#salary').val(),
+                            "fullname": $('#fullname').val(),
                             "email": $('#email').val(),
                             "phoneNumber": $('#phoneNumber').val(),
                             "dob": $('#dob').val()
@@ -104,8 +104,8 @@
 
             function resetData() {
                 $('#id').val('');
-                $('#firstname').val('');
-                $('#lastname').val('');
+                $('#salary').val('');
+                $('#fullname').val('');
                 $('#email').val('');
                 $('#phoneNumber').val('');
                 $('#dob').val('');
