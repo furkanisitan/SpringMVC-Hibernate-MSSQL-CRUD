@@ -11,7 +11,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <spring.version>5.1.6.RELEASE</spring.version>
+        <spring.version>5.2.3.RELEASE</spring.version>
         <hibernate.version>5.4.2.Final</hibernate.version>
         <mssql.version>7.2.2.jre8</mssql.version>
         <jinq.version>1.8.25</jinq.version>
